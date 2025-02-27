@@ -18,12 +18,19 @@ const imagesMobile = [
 
 export default function Carrousel() {
   const [current, setCurrent] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth < 768); // Se actualiza al montar el componente
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const images = isMobile ? imagesMobile : imagesDesktop;
@@ -37,9 +44,9 @@ export default function Carrousel() {
   };
 
   return (
-    <div className="relative w-full  flex flex-col justify-center items-center overflow-hidden">
+    <div className="relative w-full flex flex-col justify-center items-center overflow-hidden">
       {/* Contenedor de la imagen */}
-      <div className="relative w-full  flex items-center">
+      <div className="relative w-full flex items-center">
         <button
           onClick={prevSlide}
           className="absolute left-4 z-10 bg-black/50 p-3 rounded-full text-white hover:bg-black/70"

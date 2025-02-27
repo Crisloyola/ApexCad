@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link"; // ✅ Importa Link de Next.js
 
 export const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -16,7 +17,8 @@ export const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <a href="/" className="text-white">Logo</a>
+                {/* ✅ Reemplazado <a> por <Link> */}
+                <Link href="/" className="text-white">Logo</Link>
               </div>
             </div>
 
@@ -24,13 +26,9 @@ export const Navbar = () => {
             <div className="hidden md:block font-Inter">
               <div className="ml-4 flex items-center space-x-4">
                 {["Inicio", "Nosotros", "Servicios", "Proyectos", "Artículos", "Contacto"].map((item, index) => (
-                  <a
-                    key={index}
-                    href="/"
-                    className="text-white transition duration-300 ease-in-out hover:text-[#FFDF00]"
-                  >
+                  <Link key={index} href="/" className="text-white transition duration-300 ease-in-out hover:text-[#FFDF00]">
                     {item}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -63,15 +61,11 @@ export const Navbar = () => {
             >
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {["Inicio", "Nosotros", "Servicios", "Proyectos", "Artículos", "Contacto"].map((item, index) => (
-                  <motion.a
-                    key={index}
-                    href="/"
-                    className="block text-white text-center p-2 transition duration-300 ease-in-out hover:text-[#FFDF00]"
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                  >
-                    {item}
-                  </motion.a>
+                  <motion.div key={index} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
+                    <Link href="/" className="block text-white text-center p-2 transition duration-300 ease-in-out hover:text-[#FFDF00]">
+                      {item}
+                    </Link>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

@@ -10,7 +10,6 @@ export default function Home() {
       <Navbar />
       <Carrousel/>
       <Section />
-      <h1>cambio</h1>
     </>
   );
 }

@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import {Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-
-const InterFont = Inter({
-  variable: "--font-inter",
+const inter = Inter({
   subsets: ["latin"],
   weight: "400",
 });
-
 
 export const metadata: Metadata = {
   title: "ApexCAD",
@@ -22,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${InterFont.variable} ${InterFont.variable} antialiased`}
-      >
+      <body className={`${inter.className} antialiased`}>
         {children}
       </body>
     </html>

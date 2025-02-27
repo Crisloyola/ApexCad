@@ -92,6 +92,7 @@ export default function Section() {
                   width={40} 
                   height={40} 
                   className="w-9 h-8" 
+                  unoptimized 
                 />
               </div>
               <h3 className="ml-2 text-[16px] font-bold">📌{item.title}</h3>

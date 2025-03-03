@@ -72,19 +72,6 @@ export default function Carrousel() {
           <ChevronRight size={20} />
         </button>
       </div>
-
-      {/* Texto en movimiento debajo del carrusel */}
-      <div className="w-full bg-[#006393] py-4 overflow-hidden">
-        <motion.div
-          className="flex items-center text-white font-bold text-2xl whitespace-nowrap"
-          animate={{ x: [0, "-70%"] }}
-          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
-        >
-          {Array(20).fill("ESPECIALÍZATE").map((text, index) => (
-            <span key={index} className="mx-4">{text}</span>
-          ))}
-        </motion.div>
-      </div>
     </div>
   );
 }

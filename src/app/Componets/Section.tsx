@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 export default function Section() {
   const settings = {
@@ -136,9 +137,11 @@ export default function Section() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+        <Link href="/nosotros">
           <button className="bg-[#006393] text-white font-semibold py-3 px-6 rounded-[12px] hover:bg-[#005277] transition">
             ¡Descubre más sobre Nosotros!
           </button>
+          </Link>
         </motion.div>
       </div>
     </motion.section>

@@ -6,25 +6,28 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const imagesDesktop = [
   "https://i.ibb.co/8LFKfD09/banner-1-1.png",
-  "https://i.ibb.co/8LFKfD09/banner-1-1.png",
-  "https://i.ibb.co/8LFKfD09/banner-1-1.png",
+  "https://i.ibb.co/ZphynGTd/banner-2.png",
+  "https://i.ibb.co/xqknCH54/banner-Original3.png",
 ];
 
 const imagesMobile = [
   "https://i.ibb.co/YTcQ1kyd/banner-2-WEB.png",
-  "https://i.ibb.co/YTcQ1kyd/banner-2-WEB.png",
-  "https://i.ibb.co/YTcQ1kyd/banner-2-WEB.png",
+  "https://i.ibb.co/39Kxy7BF/banne-3-WEB.png",
+  "https://i.ibb.co/4RhPDKtN/BANNER-3-WEB.png",
 ];
 
 export default function Carrousel() {
   const [current, setCurrent] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  
+  const images = isMobile ? imagesMobile : imagesDesktop;
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     
     if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth < 768); // Se actualiza al montar el componente
+      setIsMobile(window.innerWidth < 768); 
       window.addEventListener("resize", handleResize);
     }
 
@@ -33,14 +36,26 @@ export default function Carrousel() {
     };
   }, []);
 
-  const images = isMobile ? imagesMobile : imagesDesktop;
+  useEffect(() => {
+    if (isPaused) return;
+    
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [current, isPaused, images.length]);
 
   const nextSlide = () => {
+    setIsPaused(true);
     setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setTimeout(() => setIsPaused(false), 5000);
   };
 
   const prevSlide = () => {
+    setIsPaused(true);
     setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setTimeout(() => setIsPaused(false), 9000);
   };
 
   return (

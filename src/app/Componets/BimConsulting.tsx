@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import Image from "next/image";
 const data = [
   {
     title: "Reducción de Costos y Mayor Control Presupuestario",
@@ -69,9 +69,11 @@ export default function BimConsulting() {
         viewport={{ once: true, amount: 0.2 }}
         className="w-full lg:w-2/5 flex justify-center lg:justify-start"
       >
-        <img
+        <Image
           src="/ban2.png"
           alt="Consultoría BIM"
+          width={500} // Ajusta el tamaño según necesites
+          height={300} // Ajusta el tamaño según necesites
           className="w-full max-w-sm lg:max-w-full h-auto object-cover rounded-lg"
         />
       </motion.div>

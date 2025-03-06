@@ -140,7 +140,8 @@ export default function Nosotros() {
         {/* Texto superpuesto */}
       <div className="absolute inset-0 flex items-center justify-center text-white">
           <h1 className="text-4xl font-bold">
-            ESPECIALISTAS <span className="text-[#006393]">EN</span> <span className="text-[#FFDF00]">TECNOLOGÍA</span>
+            ESPECIALISTAS <span className="text-[#006393]">EN </span> 
+             <span className="text-[#FFDF00]">TECNOLOGÍA</span> <span className='font-extrabold'>BIM</span>
           </h1>
         </div>
       </div>
@@ -154,8 +155,8 @@ export default function Nosotros() {
             <FaPhone className="text-[#006393] text-2xl mr-3" />
             <div>
               <p className="font-semibold">Central Telefónica</p>
-              <p>(511) 903 404 491</p>
-              <p>General Córdova 1021 - Jesús Maria , Lima, Peru</p>
+              <p>(+01) 739 7588</p>
+              <p>Calle Elias Aguirre 180 – Miraflores</p>
             </div>
           </div>
           <div className="flex items-center mb-4">

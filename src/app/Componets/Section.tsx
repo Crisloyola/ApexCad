@@ -66,7 +66,7 @@ export default function Section() {
         </motion.h2>
 
         <motion.p 
-          className="mt-5 text-[12px] md:text-[20px] font-semibold text-[#0C0C0C]"
+          className="mt-5 text-[12px] md:text-[20px] font-semibold text-[#0C0C0C][#0C0C0C]"
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

@@ -7,7 +7,7 @@ import { Footer } from '../Componets/Footer';
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { title } from 'process';
+
 
 const sections = [
   {

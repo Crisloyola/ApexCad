@@ -170,7 +170,7 @@ export default function Servicios() {
             <div className="mt-5 flex flex-col md:flex-row items-center md:items-stretch justify-center text-center md:text-left bg-[#006393] text-white p-6 rounded-lg shadow-lg gap-6">
               <div className="w-full md:w-1/3">
                 <Image
-                  src="/logosmp.jpg"
+                  src="/unsm.png"
                   width={350}
                   height={200}
                   alt="APEX CAD BIM"

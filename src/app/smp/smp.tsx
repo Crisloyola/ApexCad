@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 
 export default function Smp() {
   const imagenes = [
+    "/s1.jpg",
     "/s2.jpg",
     "/s3.jpg",
     "/s4.jpeg",

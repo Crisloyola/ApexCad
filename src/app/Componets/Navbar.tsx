@@ -20,7 +20,7 @@ export const Navbar = () => {
       path: "#",
       subItems: [
         { name: "UNMSM - EPIC", path: "/smp" },
-        { name: "FOTOGRAMETRÍA DIGITAL EN RPAS Y SU USO EN INGENIERÍA CIVIL", path: "/proyectos/fotogrametria" }
+        { name: "FOTOGRAMETRÍA DIGITAL EN RPAS Y SU USO EN INGENIERÍA CIVIL", path: "/foto" }
       ]
     },
     { name: "Artículos", path: "/articulos" },

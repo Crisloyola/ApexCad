@@ -67,7 +67,7 @@ export default function Servicios() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-            <h2 className="text-5xl font-extrabold">CASO DE ÉXITO – UNMSM - EPIC</h2>
+            <h2 className="text-2xl md:text-5xl font-extrabold">CASO DE ÉXITO – UNMSM - EPIC</h2>
           </div>
         </div>
 

@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 import { Navbar } from '../Componets/Navbar'
 import { Footer } from '../Componets/Footer';
-import { CheckCircle } from "lucide-react";
 import Foto from './foto';
 
 export default function Fotogrametria() {
@@ -152,7 +151,7 @@ export default function Fotogrametria() {
                             </div>
                             <div className="w-full md:w-2/3 px-4">
                                 <p className="text-2xl font-semibold">Conclusión</p>
-                                <p>En APEX CAD, estamos comprometidos con la innovación y el uso de tecnologías avanzadas para optimizar procesos en ingeniería civil. La fotogrametría digital con drones (RPAS) ha revolucionado la captura y procesamiento de datos espaciales, permitiendo obtener información precisa y detallada de terrenos, estructuras e infraestructuras con rapidez y eficiencia.</p>
+                                <p>En <span className='text-[#FFDF00]'>APEX CAD BIM</span>, estamos comprometidos con la innovación y el uso de tecnologías avanzadas para optimizar procesos en ingeniería civil. La fotogrametría digital con drones (RPAS) ha revolucionado la captura y procesamiento de datos espaciales, permitiendo obtener información precisa y detallada de terrenos, estructuras e infraestructuras con rapidez y eficiencia.</p>
                                 <a href="https://wa.link/0lmi4t" target='_blank'>
                                     <button className="mt-6 px-6 py-3 bg-white text-[#006393] font-bold rounded-lg hover:bg-[#FFDF00] transition">
                                         Contáctanos para más información

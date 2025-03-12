@@ -9,7 +9,7 @@ export default function Servicios() {
   const servicios = [
     {
       titulo: "Licenciamiento de Software BIM",
-      imagen: "/BIM.jpg", // Reemplaza con la imagen correcta
+      imagen: "/bim.jpg", // Reemplaza con la imagen correcta
       descripcion:
         "APEX CAD BIM gestionó el licenciamiento educativo de software BIM especializado para la EPIC-UNMSM, asegurando herramientas con estándares internacionales.",
       items: [

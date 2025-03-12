@@ -5,15 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const imagesDesktop = [
-  "https://i.ibb.co/8LFKfD09/banner-1-1.png",
-  "https://i.ibb.co/ZphynGTd/banner-2.png",
-  "https://i.ibb.co/xqknCH54/banner-Original3.png",
+  "https://i.ibb.co/21r6bQdm/banner-Original3.png",
+  "https://i.ibb.co/YTZVB9cj/banner5.png",
+  "https://i.ibb.co/GQhgv2qw/banner4.png",
+  "https://i.ibb.co/jXsPx0J/banner-1.png",
+  "https://i.ibb.co/Rp87PqMR/banner-2.png",
 ];
 
 const imagesMobile = [
-  "https://i.ibb.co/YTcQ1kyd/banner-2-WEB.png",
-  "https://i.ibb.co/39Kxy7BF/banne-3-WEB.png",
-  "https://i.ibb.co/4RhPDKtN/BANNER-3-WEB.png",
+  "https://i.ibb.co/6cwhTZH6/BANNER-3-WEB.png",
+  "https://i.ibb.co/fdf5scQt/banner-5-WEB.png",
+  "https://i.ibb.co/B53NDDCb/banne-4.png",
+  "https://i.ibb.co/yc10KQWL/BANNER-1-WEB.png",
+  "https://i.ibb.co/DHxgq816/banne-3-WEB.png"
 ];
 
 export default function Carrousel() {

@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Mantienes la exportación estática
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Deshabilita la optimización de imágenes
+    unoptimized: true,
   },
 };
 

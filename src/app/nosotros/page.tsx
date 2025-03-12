@@ -41,10 +41,10 @@ export default function Nosotros() {
           {/* Texto */}
           <div>
             <h3 className="text-4xl font-extrabold text-[#006393]">
-              <span className="text-[#006393]">APEX</span> CAD
+              <span className="text-[#006393]">APEX</span> CAD - BIM
             </h3>
             <p className="text-lg mt-4 leading-relaxed text-[#535353]">
-            APEX CAD es una empresa especializada en la implementación y adopción de 
+            APEX CAD - BIM es una empresa especializada en la implementación y adopción de 
             la metodología BIM (Building Information Modeling) en distintos sectores. Su enfoque principal es optimizar el diseño, 
             construcción y gestión de proyectos mediante tecnologías y estándares BIM.
             </p>
@@ -163,18 +163,11 @@ export default function Nosotros() {
             <FaEnvelope className="text-purple-600 text-2xl mr-3" />
             <p>apexcadperu@gmail.com</p>
           </div>
-          <div className="flex items-center">
-            <FaWhatsapp className="text-green-600 text-2xl mr-3" />
-            <div>
-              <p className="font-semibold">Whatsapp</p>
-              <p>(511) 903 404 491</p>
-            </div>
-          </div>
         </div>
         <div className="md:w-1/2 mt-6 md:mt-0">
           <iframe
             className="w-full h-64 md:h-80 rounded-lg shadow-lg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5378902097978!2d-77.04150292405035!3d-12.075283642434208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f203138923%3A0x61329f2a014117b2!2sJir%C3%B3n%20Gral.%20Cordova%201021%2C%20Jes%C3%BAs%20Mar%C3%ADa%2015072!5e0!3m2!1ses-419!2spe!4v1740973123501!5m2!1ses-419!2spe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.909466018438!2d-77.03694862404956!3d-12.118346743239442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c83d444f9753%3A0x8255648301793661!2sEl%C3%ADas%20Aguirre%20180%2C%20Miraflores%2015074!5e0!3m2!1ses!2spe!4v1741750603129!5m2!1ses!2spe"
           ></iframe>
         </div>
       </div>  

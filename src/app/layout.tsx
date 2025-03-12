@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ApexCAD",
+  title: "APEXCAD - BIM",
   description: "Cursos propedéuticos para la universidad",
 };
 

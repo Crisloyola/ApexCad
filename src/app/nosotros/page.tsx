@@ -3,7 +3,6 @@ import { Navbar } from '../Componets/Navbar'
 import Image from 'next/image'
 import { FaCheck, FaAngleRight } from "react-icons/fa";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
 import { Footer } from '../Componets/Footer';
 
 
